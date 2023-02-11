@@ -58,7 +58,7 @@ public class NewTest extends Base
 		Utility.waiting(1000, driver);
 		dash.handlePopUp();
 		Utility.waiting(500, driver);
-		//dash.searchComp(Utility.readDataFromPropertyFile("comp"), null);
+		
 		
 		
 	}
