@@ -1,11 +1,13 @@
-package POM_Neo;
+package pom_Neo;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class passwordPage 
+import utiity_Neo.Utility;
+
+public class PasswordPage 
 {
 	//ck
 	
@@ -14,17 +16,18 @@ public class passwordPage
 	
 	
 	
-	public  passwordPage(WebDriver driver)
+	public  PasswordPage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void enterPassword(String pwd)
+	public void enterPassword(String passwordNo)
 	{
-		password.sendKeys(pwd);
+		password.sendKeys(passwordNo);
 	}
-	public void clickOnSubmitButton()
+	public void clickOnSubmitButton(WebDriver driver)
 	{
+		Utility.waiting(1000, driver);
 		submitButton.click();
 	}
 

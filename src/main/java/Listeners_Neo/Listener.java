@@ -1,4 +1,4 @@
-package Listeners_Neo;
+package listeners_Neo;
 
 import java.io.IOException;
 
@@ -6,8 +6,8 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 
-import Base_Neo.Base;
-import Utiity_Neo.Utility;
+import base_Neo.Base;
+import utiity_Neo.Utility;
 
 public class Listener extends Base implements ITestListener
 {

@@ -2,6 +2,9 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
+      <![CDATA[Taking time500ms]]>
+    </line>
+    <line>
       <![CDATA[Reading data from property file]]>
     </line>
     <line>
@@ -9,9 +12,6 @@
     </line>
     <line>
       <![CDATA[Taking time1000ms]]>
-    </line>
-    <line>
-      <![CDATA[Taking time500ms]]>
     </line>
     <line>
       <![CDATA[Taking time1000ms]]>
@@ -26,9 +26,6 @@
       <![CDATA[Taking time1000ms]]>
     </line>
     <line>
-      <![CDATA[Taking time1000ms]]>
-    </line>
-    <line>
       <![CDATA[Reading data from property file]]>
     </line>
     <line>
@@ -36,6 +33,9 @@
     </line>
     <line>
       <![CDATA[Taking time2000ms]]>
+    </line>
+    <line>
+      <![CDATA[Taking time1000ms]]>
     </line>
     <line>
       <![CDATA[Taking time1000ms]]>
@@ -65,12 +65,19 @@
       <![CDATA[Taking time1000ms]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-02-11T18:15:54 IST" name="Default suite" finished-at="2023-02-11T18:16:20 IST" duration-ms="26012">
+  <suite started-at="2023-02-18T13:25:21 IST" name="Default suite" finished-at="2023-02-18T13:25:42 IST" duration-ms="20677">
     <groups>
     </groups>
-    <test started-at="2023-02-11T18:15:54 IST" name="Default test" finished-at="2023-02-11T18:16:20 IST" duration-ms="26012">
+    <test started-at="2023-02-18T13:25:21 IST" name="Default test" finished-at="2023-02-18T13:25:42 IST" duration-ms="20677">
       <class name="test_Neo.NewTest">
-        <test-method is-config="true" signature="lounchBrowser()[pri:0, instance:test_Neo.NewTest@32502377]" started-at="2023-02-11T18:15:54 IST" name="lounchBrowser" finished-at="2023-02-11T18:16:01 IST" duration-ms="6750" status="PASS">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:test_Neo.NewTest@1e0b4072]" started-at="2023-02-18T13:25:21 IST" name="openBrowser" finished-at="2023-02-18T13:25:25 IST" duration-ms="3946" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Taking time500ms]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="logIninNeostox()[pri:0, instance:test_Neo.NewTest@1e0b4072]" started-at="2023-02-18T13:25:25 IST" name="logIninNeostox" finished-at="2023-02-18T13:25:40 IST" duration-ms="14414" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Reading data from property file]]>
@@ -82,13 +89,6 @@
               <![CDATA[Taking time1000ms]]>
             </line>
             <line>
-              <![CDATA[Taking time500ms]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- lounchBrowser -->
-        <test-method is-config="true" signature="logIninNeostox()[pri:0, instance:test_Neo.NewTest@32502377]" started-at="2023-02-11T18:16:01 IST" name="logIninNeostox" finished-at="2023-02-11T18:16:18 IST" duration-ms="17171" status="PASS">
-          <reporter-output>
-            <line>
               <![CDATA[Taking time1000ms]]>
             </line>
             <line>
@@ -96,9 +96,6 @@
             </line>
             <line>
               <![CDATA[The value is 9096429868]]>
-            </line>
-            <line>
-              <![CDATA[Taking time1000ms]]>
             </line>
             <line>
               <![CDATA[Taking time1000ms]]>
@@ -116,11 +113,14 @@
               <![CDATA[Taking time1000ms]]>
             </line>
             <line>
+              <![CDATA[Taking time1000ms]]>
+            </line>
+            <line>
               <![CDATA[Taking time500ms]]>
             </line>
           </reporter-output>
         </test-method> <!-- logIninNeostox -->
-        <test-method signature="validatecompanylisted()[pri:0, instance:test_Neo.NewTest@32502377]" started-at="2023-02-11T18:16:18 IST" name="validatecompanylisted" finished-at="2023-02-11T18:16:18 IST" duration-ms="74" status="PASS">
+        <test-method signature="validatecompanylisted()[pri:0, instance:test_Neo.NewTest@1e0b4072]" started-at="2023-02-18T13:25:40 IST" name="validatecompanylisted" finished-at="2023-02-18T13:25:40 IST" duration-ms="57" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[ADANI ENTERPRISES]]>
@@ -142,14 +142,14 @@
             </line>
           </reporter-output>
         </test-method> <!-- validatecompanylisted -->
-        <test-method is-config="true" signature="logOutNeo()[pri:0, instance:test_Neo.NewTest@32502377]" started-at="2023-02-11T18:16:18 IST" name="logOutNeo" finished-at="2023-02-11T18:16:20 IST" duration-ms="1510" status="PASS">
+        <test-method is-config="true" signature="logOutNeo()[pri:0, instance:test_Neo.NewTest@1e0b4072]" started-at="2023-02-18T13:25:40 IST" name="logOutNeo" finished-at="2023-02-18T13:25:42 IST" duration-ms="1368" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Taking time1000ms]]>
             </line>
           </reporter-output>
         </test-method> <!-- logOutNeo -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test_Neo.NewTest@32502377]" started-at="2023-02-11T18:16:20 IST" name="closeBrowser" finished-at="2023-02-11T18:16:20 IST" duration-ms="277" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test_Neo.NewTest@1e0b4072]" started-at="2023-02-18T13:25:42 IST" name="closeBrowser" finished-at="2023-02-18T13:25:42 IST" duration-ms="385" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

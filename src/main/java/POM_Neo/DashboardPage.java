@@ -1,4 +1,4 @@
-package POM_Neo;
+package pom_Neo;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Reporter;
 
-import Utiity_Neo.Utility;
+import utiity_Neo.Utility;
 
 public class DashboardPage 
 {

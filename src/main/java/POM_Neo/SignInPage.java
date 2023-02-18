@@ -1,4 +1,4 @@
-package POM_Neo;
+package pom_Neo;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
