@@ -11,54 +11,60 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-import Base_Neo.Base;
-import POM_Neo.DashboardPage;
-import POM_Neo.MobileNoPage;
-import POM_Neo.SignInPage;
-import POM_Neo.passwordPage;
-import Utiity_Neo.Utility;
+import base_Neo.Base;
+import pom_Neo.DashboardPage;
+import pom_Neo.MobileNoPage;
+import pom_Neo.SignInPage;
+import pom_Neo.PasswordPage;
+import utiity_Neo.Utility;
 
 
 
-@Listeners (Listeners_Neo.Listener.class)
+@Listeners (listeners_Neo.Listener.class)
 public class NewTest extends Base
 {
 	//ck
 	
 	SignInPage sign;
 	MobileNoPage mobile;
-	passwordPage pass;
+	PasswordPage pass;
 	DashboardPage dash;
 	
 	
 	
 	@BeforeClass
-	public void lounchBrowser() throws IOException
+	public void openBrowser() throws IOException
 	{
-		lounchNeoStox();
+		lounchBrowser();
 		Utility.waiting(500, driver);
 	    sign=new SignInPage(driver); 
 	    mobile=new MobileNoPage(driver);
-	    pass=new passwordPage(driver);
+	    pass=new PasswordPage(driver);
 	    dash=new DashboardPage(driver);
+	    
+	   
+	
+	    
 	}
 	
 	@BeforeMethod
 	public void logIninNeostox() throws IOException
 	{
+		driver.get(Utility.readDataFromPropertyFile("url"));
+		Utility.waiting(1000, driver);
 		sign.clickOnSignInButton();
 		Utility.waiting(1000, driver);
 		mobile.enterMobileNo(Utility.readDataFromPropertyFile("mobileNo"));
 		Utility.waiting(1000, driver);
 		mobile.clickOnSignInBittoN();
-		Utility.waiting(1000, driver);
+		//Utility.waiting(2000, driver);
 		pass.enterPassword(Utility.readDataFromPropertyFile("password"));
 		Utility.waiting(2000, driver);
-		pass.clickOnSubmitButton();
+		pass.clickOnSubmitButton(driver);
 		Utility.waiting(1000, driver);
 		dash.handlePopUp();
 		Utility.waiting(500, driver);
-		//dash.searchComp(Utility.readDataFromPropertyFile("comp"), null);
+		
 		
 		
 	}
@@ -72,19 +78,19 @@ public class NewTest extends Base
 
 	
 	@AfterMethod
-	public void logOutNeo()
-	{ 
+	  public void logOutNeo()
+	  { 
 		Utility.waiting(1000, driver);
 		dash.logOut();
 		
-	}
+	  }
 
 
-@AfterClass
+   @AfterClass
   public void closeBrowser()
-  {
+   {
 	driver.close();
-  }
+   }
 
 
 

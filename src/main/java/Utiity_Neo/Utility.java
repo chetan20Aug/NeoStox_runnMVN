@@ -1,4 +1,4 @@
-package Utiity_Neo;
+package utiity_Neo;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -19,7 +19,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Reporter;
 
-import Base_Neo.Base;
+import base_Neo.Base;
 
 public class Utility extends Base
 {
